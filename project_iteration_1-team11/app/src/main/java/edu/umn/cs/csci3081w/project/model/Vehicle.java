@@ -45,6 +45,8 @@ public abstract class Vehicle {
 
   public abstract void update();
 
+  public abstract int calculateCo2();
+
   public int getId() {
     return id;
   }

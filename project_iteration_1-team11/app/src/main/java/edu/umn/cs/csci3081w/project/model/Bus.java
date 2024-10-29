@@ -184,6 +184,8 @@ public class Bus extends Vehicle {
     return nextStop;
   }
 
-
+  public int calculateCo2() {
+    return (2 * this.getPassengers().size()) + 4;
+  }
 
 }
