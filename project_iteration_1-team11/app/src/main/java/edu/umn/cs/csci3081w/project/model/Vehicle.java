@@ -85,5 +85,4 @@ public abstract class Vehicle {
     this.position = position;
   }
 
-  public abstract int calculateCO2();
 }
