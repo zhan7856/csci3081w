@@ -19,12 +19,12 @@ public class Bus extends Vehicle {
    * @param capacity capacity of bus
    * @param speed    speed of bus
    */
-  public Bus(int id, Route out, Route in, int capacity, double speed) {
+  public Bus(int id, Line line, int capacity, double speed) {
     super(id, capacity, speed, new PassengerLoader(), new PassengerUnloader());
-    line = new Line(in, out);
+    this.line = line;
     this.distanceRemaining = 0;
-    this.nextStop = out.getDestinationStop();
-    setName(out.getName() + id);
+    this.nextStop = line.getOutboundRoute().getDestinationStop();
+    setName(line.getOutboundRoute().getName() + id);
     setPosition(new Position(nextStop.getPosition().getLongitude(),
         nextStop.getPosition().getLatitude()));
   }
