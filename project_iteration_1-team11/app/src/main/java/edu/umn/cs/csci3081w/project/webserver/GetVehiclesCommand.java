@@ -39,6 +39,7 @@ public class GetVehiclesCommand extends SimulatorCommand {
       } else if (currVehicle instanceof Train) {
         vehicleType = Train.TRAIN_VEHICLE;
       }
+      //s
       s.addProperty("type", vehicleType);
       s.addProperty("co2", 0);
       JsonObject jsonObject = new JsonObject();
