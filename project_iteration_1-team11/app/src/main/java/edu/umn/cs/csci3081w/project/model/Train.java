@@ -184,4 +184,8 @@ public class Train extends Vehicle {
     return nextStop;
   }
 
+  public int getCo2() {
+   return (3 * this.getPassengers().size()) + 6;
+  }
+
 }

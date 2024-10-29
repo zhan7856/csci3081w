@@ -84,4 +84,6 @@ public abstract class Vehicle {
   public void setPosition(Position position) {
     this.position = position;
   }
+
+  public abstract int calculateCO2();
 }
