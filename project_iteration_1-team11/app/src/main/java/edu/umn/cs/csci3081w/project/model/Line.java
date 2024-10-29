@@ -9,6 +9,10 @@ public class Line {
       this.outboundRoute = outboundRoute;
    }
 
+   public Line shallowCopy(Line line) {
+      return new Line(line.getInboundRoute().shallowCopy(), line.getOutboundRoute().shallowCopy());
+   }
+
    public Route getOutboundRoute() {
       return outboundRoute;
    }
