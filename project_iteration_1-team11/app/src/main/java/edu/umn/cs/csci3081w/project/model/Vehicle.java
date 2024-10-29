@@ -35,6 +35,8 @@ public abstract class Vehicle {
     this.passengers = new ArrayList<Passenger>();
   }
 
+  public abstract int calculateCO2();
+
   public abstract void report(PrintStream out);
 
   public abstract boolean isTripComplete();
