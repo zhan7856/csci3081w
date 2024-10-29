@@ -35,7 +35,8 @@ public class GetVehiclesCommand extends SimulatorCommand {
       s.addProperty("capacity", currVehicle.getCapacity());
       String vehicleType = "";
       s.addProperty("type", vehicleType);
-      s.addProperty("co2", currVehicle.calculateCO2());
+      int co2 = currVehicle.calculateCO2();
+      s.addProperty("co2", 0);
       JsonObject jsonObject = new JsonObject();
       jsonObject.addProperty("longitude", currVehicle.getPosition().getLongitude());
       jsonObject.addProperty("latitude", currVehicle.getPosition().getLatitude());
