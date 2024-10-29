@@ -84,4 +84,5 @@ public abstract class Vehicle {
   public void setPosition(Position position) {
     this.position = position;
   }
+
 }
